@@ -1,0 +1,140 @@
+MAZEBOT // POSTMASTER
+🧠 CORE OBJECTIVE:
+Autonomously manage, create, schedule, and publish multimedia content across all platforms (Instagram, TikTok, Threads, X, Facebook, Medium, Email), while repurposing existing material and redirecting high-priority messages or comments to your WhatsApp.
+
+🛠️ FUNCTIONAL MODULES
+1. Content Brain (Creation & Repurposing Engine)
+Inputs:
+
+Past magazine content (PDFs, articles, posts)
+
+Prompts/themes (e.g., “Glitch Art Monday”, “Artist Letter Highlight”)
+
+Current week’s promotion goal
+
+Outputs:
+
+Captions (with branded hashtags, CTAs)
+
+Repurposed reels from past videos/articles
+
+AI-generated posts from editorial text
+
+Carousel post text, tweet threads, or meme formats
+
+Tech Stack: GPT-4.5 API + Claude Sonnet or Gemini 1.5 for summarization and content remixing.
+
+2. Postmaster Scheduler (Auto Publishing Engine)
+Tools:
+
+Zapier / Make / n8n for automations
+
+Buffer / Later / Publer / Hootsuite for cross-platform scheduling
+
+Google Calendar integration for oversight
+
+Functions:
+
+Schedules 1–2 posts per day across all channels
+
+Chooses best times per platform
+
+Automatically reposts high-performing content after 2–3 weeks
+
+Sends WhatsApp alerts to you if engagement spikes
+
+3. MailMaze (Email Composer & Blaster)
+Integrations:
+
+Mailchimp / Brevo / Beehiiv / Buttondown
+
+Functions:
+
+Weekly digest-style email to your list (auto-pulled from content queue)
+
+Sends previews of next issue or community features
+
+Personal tone and voice matching ART MAZE brand
+
+Tracks opens, clicks, and forwards
+
+4. CommentRadar (Engagement Redirector)
+Integrations:
+
+Meta API for FB/IG DMs + comments
+
+X / Threads API
+
+WhatsApp Business API (via Twilio or 360Dialog)
+
+Functions:
+
+Monitors comments/messages
+
+Sends high-priority or sales DMs to your WhatsApp (via webhook)
+
+Auto-responds with saved replies for FAQs
+
+Flags trolls/spam for review
+
+5. Asset Manager
+Stores and organizes all brand assets
+
+Accesses Google Drive/Dropbox folder of all visuals/audio
+
+Fetches relevant images for post generation
+
+Remixes past visuals into fresh reels or memes
+
+6. Analytics Brain
+Pulls weekly reports:
+
+Top-performing content
+
+Click-through rates
+
+Follower growth and engagement spikes
+
+Suggests what to boost or repost
+
+⚙️ AUTOMATION FLOW EXAMPLE
+plaintext
+Copy
+Edit
+Daily at 7:30 AM:
+→ MAZEBOT selects content from weekly theme or archives
+→ Generates caption + selects asset
+→ Schedules post via Publer for Instagram + Threads + X
+
+Daily at 1:00 PM:
+→ Pulls post comments and DMs
+→ Filters for important ones
+→ Sends summary and urgent replies to Grimson via WhatsApp
+
+Weekly (Sunday):
+→ Compiles performance summary
+→ Auto-generates email draft
+→ Queues Mailchimp campaign for Monday send
+
+On demand:
+→ Accepts prompt: “Repurpose Week 2 WhatsApp post for TikTok”
+→ Returns new video + caption
+🧩 SETUP NEEDED
+ Choose social scheduler (Buffer, Publer, Later)
+
+ Link social accounts + WhatsApp API (via Twilio or 360Dialog)
+
+ Organize brand asset library (Google Drive or Notion)
+
+ Train MAZEBOT on brand tone and previous ART MAZE content
+
+ Add prompts/tasks in automation tools (Zapier / Make)
+
+👁️ BONUS FEATURES (Optional)
+Visual remixing with RunwayML or Pika Labs
+
+Discord server bot for publishing community content
+
+WhatsApp autoresponder AI agent
+
+Voice note responder for DMs
